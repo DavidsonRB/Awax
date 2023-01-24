@@ -236,6 +236,8 @@ CSS DE AREAS ESPECIFICAS
     box-shadow: 0px 0px 10px #000;
 }
 
+/* SERVICES */
+
 .section-services{
     display: flex;
 }
@@ -262,6 +264,9 @@ CSS DE AREAS ESPECIFICAS
     font-size: 13px;
     color: #999;
 }
+
+/* PROJECTS */
+
 .section-projects{
     display: flex;
     flex-direction: column;
@@ -733,5 +738,153 @@ CSS DE AREAS ESPECIFICAS
     font-size: 13px;
     margin: 6px;
     color: #999;
+}
+
+/* FACTS */
+
+.section-facts{
+    display: flex;
+}
+
+.section-fact{
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.section-fact h1{
+    margin-top: 10px;
+    text-transform: uppercase;
+    font-size: 40px;
+    color: var(--menu);
+}
+.section-fact .risco{
+    background-color: #555;
+    width: 20px;
+    height: 5px;
+    margin: auto;
+}
+
+.section-fact h4{
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-size: 16px;
+    height: 40px;
+}
+
+.section-fact p{
+    margin-top: 10px;
+    font-size: 11px;
+    width: 190px;
+    text-align: justify;
+    color: #999;
+}
+
+/* TELL */
+
+.section-tell{
+    display: flex;
+    justify-content: center;
+    color: #999;
+}
+.section-tell--p1{
+    display: flex;
+    align-items: center;
+}
+
+.section-tell--p1 img{
+    margin-right: 15px;
+}
+
+.section-tell--p1 p{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.section-tell .tell{
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+}
+
+.tell a{
+    display: flex;
+    align-items: center;
+    margin: 10px;
+    color: #7E7E7E;
+}
+
+.tell div{
+    width: 35px;
+    height: 35px;
+    margin: 10px;
+}
+
+.tell a p{
+    font-size: 11px;
+}
+
+.tell .circle{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 100%;
+}
+
+.tell .twitter {
+    background-color: #34c6ef;
+}
+.tell .linkedin {
+    background-color: #127db3;
+}
+.tell .facebook {
+    background-color: #336296;
+
+}
+
+.tell .googleplus {
+    background-color: #e84138;
+}
+.tell .pinterest {
+    background-color: #b61b29;
+}
+
+/* CONTACT */
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.login{
+    display: flex;
+}
+
+input::placeholder,
+textarea::placeholder{
+    text-transform: uppercase;
+}
+
+input {
+    width: 100%;
+    padding: 20px;
+    margin: 10px 0px;
+    margin-left: 20px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 20px;
+    margin: 20px 10px;
+    background-color: #F7F7F7;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    resize: none;
+}
+
+form .button{
+    width: 200px;
+    cursor: pointer;
 }
 
