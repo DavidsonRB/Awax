@@ -951,7 +951,7 @@ CSS DE AREAS ESPECIFICAS
 /* FOOTER */
 
 footer{
-    background-color: #000;
+    background-color: var(--black);
     color: #999;
     display: flex;
     justify-content: center;
