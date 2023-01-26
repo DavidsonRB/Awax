@@ -9,11 +9,11 @@
 
 :root {
     --black: #000;
-    --white: #fff;
-    --gray:#ccc;
+    --white: #FFF;
+    --gray:#CCC;
     --GrayLight: #F7F7F7;
     --menu: #B28756;
-    --teste: #f00;
+    --teste: #F00;
     --fundo_preto_opacidade: rgba(0, 0, 0, 0.8);
 }
 
@@ -84,7 +84,13 @@ header {
     font-weight: 700;
     padding: 12px 40px;
     margin-top: 40px;
+    border: 0;
     border-radius: 20px;
+    cursor: pointer;
+}
+
+.button:hover{
+    background-color:#b17a3a;
 }
 
 .banner {
@@ -566,8 +572,8 @@ CSS DE AREAS ESPECIFICAS
     align-items: center;
     width: 100%;
     height: 170px;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
+    border-top: 1px solid #CCC;
+    border-bottom: 1px solid #CCC;
     box-shadow: 0px 0px 2px #000;
 }
 
@@ -850,41 +856,175 @@ CSS DE AREAS ESPECIFICAS
 }
 
 /* CONTACT */
-form{
+.section-contact form{
     display: flex;
     flex-direction: column;
     align-items: center;
+    max-width:450px;
 }
 
 .login{
     display: flex;
 }
 
-input::placeholder,
-textarea::placeholder{
+.section-contact input::placeholder,
+.section-contact textarea::placeholder{
     text-transform: uppercase;
 }
 
-input {
+.section-contact input {
     width: 100%;
     padding: 20px;
     margin: 10px 0px;
-    margin-left: 20px;
 }
 
-input,
-textarea {
+.section-contact input:first-child{
+    margin-right: 20px;
+}
+
+.section-contact input[type=text],
+.section-contact input[type=email],
+.section-contact textarea {
     width: 100%;
     padding: 20px;
-    margin: 20px 10px;
-    background-color: #F7F7F7;
-    border: none;
-    border-bottom: 2px solid #ccc;
+    margin-top: 10px;
     resize: none;
+    display:block;
+    outline:0;
+    background:transparent;
+    border:0;
+    border-bottom:2px solid #CCC;
 }
 
-form .button{
+.section-contact .button{
     width: 200px;
-    cursor: pointer;
+    padding: 12px 40px;
+    margin-top: 40px;
 }
 
+/* MAP */
+
+.section-map{
+    background-image: url(../images/mapa.jpg);
+    background-size: cover;
+    background-position: center;
+    padding: 30px 0;
+}
+
+.section-map--area{
+    width: 100vw;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.section-map--info{
+    width: 50%;
+    padding: 30px;
+    background-color: #FFF;
+}
+
+.section-map--info-item{
+    display: flex;
+    align-items: center;
+    color: #999;
+    margin-bottom: 10px;
+    font-size: 12px;
+}
+
+.section-map--info-item-img{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin-right: 15px;
+    background-color: #999;
+    border-radius: 15px;
+}
+
+.section-map--info-item-img img{
+    width: 15px;
+    height: auto;
+}
+
+/* FOOTER */
+
+footer{
+    background-color: #000;
+    color: #999;
+    display: flex;
+    justify-content: center;
+}
+
+.footer--area {
+    display: flex;
+    align-items: center;
+    width: 1100px;  
+}
+
+.footer--item{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    height: 250px;
+    padding: 20px;
+}
+
+.footer-social a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 35px;
+    height: 35px;
+    background-color: #333;
+    border-radius: 20px;
+    margin-right: 15px;
+}
+
+.footer-social a:hover{
+    background-color: var(--menu);
+}
+
+.footer--item .copyright{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.area2{
+    font-size: 12px;
+    text-align: left;
+}
+
+.area3 form{
+    display: flex;
+    flex-direction: column;
+    background-color: #333;
+    height: 260px;
+    padding: 20px 50px;
+}
+
+.area3 form button{
+    margin-top: 20px;
+}
+
+.area3 form input{
+    display:block;
+    width: 100%;
+    padding: 20px;
+    margin-top:10px;
+    outline:0;
+    color: #FFF;
+    background-color: #333;
+    background:transparent;
+    border:none;
+    border-bottom:2px solid #CCC;
+}
+
+
+.area3 form input::placeholder {
+    text-transform: uppercase;
+    text-align: center;
+    border: none;
+}
