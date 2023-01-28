@@ -44,6 +44,10 @@ header {
     border-radius: 40px;
 }
 
+.menu-opener{
+    display: none;
+}
+
 .menu {
     flex: 1;
     display: flex;
@@ -82,7 +86,9 @@ header {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-    padding: 12px 40px;
+    width: 220px;
+    text-align: center;
+    padding: 15px 10px;
     margin-top: 40px;
     border: 0;
     border-radius: 20px;
@@ -225,7 +231,7 @@ CSS DE AREAS ESPECIFICAS
 
 .section-aboutus--left{
     flex: 1;
-    padding-right: 20px;
+    padding: 30px;
 }
 
 .section-aboutus--left p{
@@ -233,7 +239,6 @@ CSS DE AREAS ESPECIFICAS
     line-height: 25px;
 }
 .section-aboutus--right{
-    margin-left: 10px;
     text-align: center;
 }
 
@@ -249,7 +254,7 @@ CSS DE AREAS ESPECIFICAS
 }
 
 .section-service{
-    flex: 1;
+    height: 200px;
     text-align: center;
     padding: 15px;
     border-left: 1px solid #333;
@@ -325,7 +330,7 @@ CSS DE AREAS ESPECIFICAS
 }
 
 .section-projects--photo{
-    width: 270px;
+    width: 275px;
 }
 
 .section-projects--photoarea{
@@ -475,19 +480,18 @@ CSS DE AREAS ESPECIFICAS
 /* REVIEWS */
 
 .section-reviews{
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
 .section-reviews .sliders {
     width: 1000vw;
-    height: 100%;
+    height: auto;
 }
 
 .section-reviews .slide {
-    width: 1000px;
+    width: 1100px;
     height: 100%;
-    min-height: 410px;
     display: inline-block;
     background-color: var(--white);
     margin-right: 30px;
@@ -499,6 +503,7 @@ CSS DE AREAS ESPECIFICAS
     height: 100%;
     justify-content: center;
     align-items: center;
+    padding: 0 50px;
     color: var(--black);
     background-color: var(--GrayLight);
 }
@@ -587,7 +592,7 @@ CSS DE AREAS ESPECIFICAS
     background-color: #EDEDED;
 }
 .section-prices {
-    max-width: 1000px;
+    max-width: 1100px;
     margin: auto;
 }
 
@@ -595,15 +600,15 @@ CSS DE AREAS ESPECIFICAS
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .section-prices .slide {
-    width: 270px;
-    min-height: 310px;
+    width: 235px;
     height: 100%;
     display: inline-block;
     background-color: var(--white);
-    margin: 20px;
+    margin: 10px 20px;
 }
 
 .section-prices .slidearea {
@@ -613,7 +618,7 @@ CSS DE AREAS ESPECIFICAS
     justify-content: center;
     align-items: center;
     color: var(--black);
-    padding: 10px;
+    padding: 20px;
 }
 
 .section-prices--title{
@@ -657,6 +662,7 @@ CSS DE AREAS ESPECIFICAS
 }
 
 .section-prices .slidearea .button{
+    width: 150px;
     margin-top: 20px;
     padding: 12px 30px;
 }
@@ -732,7 +738,7 @@ CSS DE AREAS ESPECIFICAS
 }
 
 .section-infoprice--info .info .list{
-    width: 400px;
+    width: 100%;
     margin-left: 20px;
 }
 
@@ -753,9 +759,16 @@ CSS DE AREAS ESPECIFICAS
 }
 
 .section-fact{
-    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    padding: 20px;
+    padding: 20px 40px;
+    border-left: 1px solid #333;
+}
+
+.section-fact:last-child{
+    border-right: 1px solid #333;
 }
 
 .section-fact h1{
@@ -768,7 +781,6 @@ CSS DE AREAS ESPECIFICAS
     background-color: #555;
     width: 20px;
     height: 5px;
-    margin: auto;
 }
 
 .section-fact h4{
@@ -781,7 +793,6 @@ CSS DE AREAS ESPECIFICAS
 .section-fact p{
     margin-top: 10px;
     font-size: 11px;
-    width: 190px;
     text-align: justify;
     color: #999;
 }
@@ -959,19 +970,27 @@ footer{
 
 .footer--area {
     display: flex;
-    align-items: center;
+    flex-direction: column;
     width: 1100px;  
 }
 
 .footer--item{
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    flex: 1;
     height: 250px;
-    padding: 20px;
+    margin-top: 50px;
 }
 
+.area1,
+.area2,
+.area3{
+    width: 350px;
+    height: 250px;
+    padding: 0 20px;
+}
+
+.footer-social{
+    display: flex;
+}
 .footer-social a{
     display: inline-flex;
     justify-content: center;
@@ -987,25 +1006,25 @@ footer{
     background-color: var(--menu);
 }
 
-.footer--item .copyright{
-    font-size: 14px;
-    font-weight: 600;
-}
-
 .area2{
     font-size: 12px;
     text-align: left;
 }
 
+.area3{
+    width: 400px;
+}
+
 .area3 form{
     display: flex;
+    height: 200px;
     flex-direction: column;
     background-color: #333;
-    height: 260px;
-    padding: 20px 50px;
+    padding: 20px 30px;
 }
 
 .area3 form button{
+    width: 300px;
     margin-top: 20px;
 }
 
@@ -1027,4 +1046,156 @@ footer{
     text-transform: uppercase;
     text-align: center;
     border: none;
+}
+
+.copyright{
+    font-size: 15px;
+    font-weight: 600;
+    position: relative;
+    top: -40px;
+}
+
+
+
+@media (min-width:450px) and (max-width:800px){ 
+    .logo{
+        margin-left: 30px;
+    }
+    .menu-opener{
+        display: block;
+        width: 45px;
+        margin-right: 30px;
+    }
+
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.95);
+        width: 70%;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }
+
+    .menu ul {
+        flex-direction: column;
+    }
+
+    .menu li a {
+        font-weight: bold;
+        height: 80px;
+        font-size: 25px;
+        margin-left: 50px;
+        border: 0;
+    }
+
+    .menu li a:hover,
+    .menu li.active a{
+        border: 0;
+        color: var(--menu);
+    }
+
+    /* ABOUTUS */
+    .section-aboutus{
+        flex-direction: column;
+        margin: 0 30px 30px 30px;
+    }
+
+    .section-aboutus--left{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* SERVICES */
+    .section-services {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .section-service{
+        min-width: 50%;
+        border-right: 1px solid #333;
+        margin-bottom: 20px;
+    }
+
+    /* TEAM */
+
+    .section-team{
+        max-width: 650px;
+    }
+
+    /* REVIEWS */
+    .section-reviews{
+        width: 650px;
+    }
+
+    .section-reviews .slide{
+        width: 650px;
+    }
+
+    /* PRICES */
+
+    .section-prices .slide{
+        margin: 11px;
+    }
+
+    /* INFOPRICES */
+
+    .section-infoprices{
+        width: 650px;
+    }
+
+    .section-infoprices .slide{
+        width: 650px;
+    }
+
+    .section-infoprice--info{
+        width: 350px;
+    }
+    
+    .section-infoprice--info .info{
+        width: 350px;
+    }
+    
+
+    .section-infoprice--book{
+        width: 300px;
+    }
+
+    /* FACTS */
+
+    .section-facts{
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .section-fact{
+        max-width: 50%;
+        margin-bottom: 20px;
+    }
+
+    .area1,
+    .area2,
+    .area3{
+    width: 250px;
+    height: 200px;
+    padding: 0 10px;
+    }
+
+    .footer-social a{
+        margin-right: 11px;
+    }
+
+    .area3 form .button{
+        width: 170px;
+        padding: 12px 10px;
+    }
+  
+    .copyright{
+        margin-left: 20px;
+    }
 }
