@@ -338,6 +338,7 @@ CSS DE AREAS ESPECIFICAS
 .section-projects--photoarea{
     margin: 10px;
     width: 255px;
+    height: 160px;
     overflow-y: hidden;
 }
 
@@ -349,13 +350,13 @@ CSS DE AREAS ESPECIFICAS
 .section-projects--photoinfo {
     position: absolute;
     background-color: rgba(0, 0, 0, 0.5);
+    color: #FFF;
     width: inherit;
     height: inherit;
     display: none;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    color: #fff;
 }
 
 .section-projects--photoinfo h5 {
@@ -1305,7 +1306,8 @@ footer{
     }
 
     .section-projects--photoarea{
-        width: 320px;
+        width: 300px;
+        height: 185px;
     }
 
     .section-projects--filters li{
