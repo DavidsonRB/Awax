@@ -1,5 +1,5 @@
 # Awax
 
-## Cole de um site chamado Awax
+## Clone de um site chamado Awax
 
-### Link: 
+## Link: [AWAX](https://davidsonrb.github.io/awax/)
